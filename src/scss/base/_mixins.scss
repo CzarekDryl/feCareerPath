@@ -94,3 +94,10 @@
         transform: scaleX(1);
     }
 }
+
+@mixin grid-generator($col: 1, $cols: 1fr, $row: 1, $rows: 1fr, $gap: 0) {
+    display: grid;
+    grid-template-columns: repeat($col, $cols);
+    grid-template-rows: repeat($row, $rows);
+    gap: $gap;
+}
